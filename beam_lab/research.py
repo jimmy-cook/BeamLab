@@ -9,6 +9,7 @@ from datetime import datetime
 from pathlib import Path
 
 from .config import Config, planned_model_count
+from .pipeline import run_times
 from .sampling import ResearchRanges, sample_study
 
 DEFAULT_ETABS = r"C:\Program Files\Computers and Structures\ETABS 22\ETABS.exe"
@@ -145,7 +146,15 @@ def run_summary(folder):
         seconds = round(span.total_seconds()/ran, 1) if ran else None
     except (KeyError, ValueError):
         pass
-    return dict(folder=str(folder), name=folder.name, state=manifest.get("state"), started=manifest.get("started_utc"),
+    times = {}
+    try:  # a run that ended without finished_utc (crash) has no end time or duration
+        if manifest.get("finished_utc") or manifest.get("state") == "running":
+            times = run_times(manifest)
+        else:
+            times = {key: value for key, value in run_times(manifest).items() if key in ("date", "start_time")}
+    except (KeyError, ValueError):
+        pass
+    return dict(folder=str(folder), name=folder.name, state=manifest.get("state"), started=manifest.get("started_utc"), **times,
                 models=manifest.get("completed_candidates"), total=manifest.get("total_candidates"),
                 sizing_rows=len(size), seconds_per_model=seconds,
                 failed_models=sum(r["status"] == "failed" for r in runs),

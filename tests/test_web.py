@@ -377,3 +377,18 @@ def test_ann_size_train_has_only_size_independent_inputs_and_b_h(tmp_path):
     assert not [c for c in train[0] if c.startswith(leaks) or any(x in c for x in leaks[1:4])]
     for t, s in zip(train, size):
         assert all(t[c] == s[c] for c in t)
+
+
+def test_run_records_local_date_start_end_and_duration(tmp_path):
+    from beam_lab.research import run_summary
+    config = build_study("smoke", lines=1, seed=1, root=ROOT)
+    manifest = run(config, tmp_path, adapter_factory=fake_etabs())
+    for key in ("started_local", "finished_local", "duration", "duration_s"):
+        assert manifest[key] not in (None, "")
+    info = list(csv.DictReader((tmp_path/"run_info.csv").open(encoding="utf-8-sig")))
+    assert len(info) == 1 and info[0]["state"] == "completed" and info[0]["end_time"] != "running"
+    assert re.fullmatch(r"\d{4}-\d{2}-\d{2}", info[0]["date"]) and re.fullmatch(r"\d{2}:\d{2}:\d{2}", info[0]["start_time"])
+    assert re.fullmatch(r"\d+ h \d{2} min \d{2} s", info[0]["duration"]) and info[0]["beam_lines_finished"] == "1"
+    summary = run_summary(tmp_path)
+    assert (summary["date"], summary["start_time"], summary["end_time"], summary["duration"]) == \
+        (info[0]["date"], info[0]["start_time"], info[0]["end_time"], info[0]["duration"])

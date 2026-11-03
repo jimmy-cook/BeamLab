@@ -23,6 +23,20 @@ SEARCH_FINISHED = {"found", "none_passed", "no_valid_depth"}  # width searches t
 LOCKED_FILE_WAIT_SECONDS = 120  # at the end of a run, how long to wait for an output file open in Excel to be closed
 
 
+def duration_text(seconds):
+    seconds = int(round(seconds))
+    return f"{seconds//3600} h {seconds%3600//60:02d} min {seconds%60:02d} s"
+
+
+def run_times(manifest, now=None):
+    """Local date, start/end time and duration of a run (elapsed so far while it is running)."""
+    start = datetime.fromisoformat(manifest["started_utc"]).astimezone()
+    end = datetime.fromisoformat(manifest["finished_utc"]).astimezone() if manifest.get("finished_utc") else None
+    seconds = ((end or now or datetime.now(timezone.utc)) - start).total_seconds()
+    return dict(date=f"{start:%Y-%m-%d}", start_time=f"{start:%H:%M:%S}", end_time=f"{end:%Y-%m-%d %H:%M:%S}"[11:] if end else "",
+                end_date=f"{end:%Y-%m-%d}" if end else "", duration=duration_text(seconds), duration_s=round(seconds))
+
+
 def smallest_passing(depths, passes):
     """Bisect ascending depths for the smallest one where passes(h) is True.
 
@@ -62,7 +76,9 @@ def run(config, output, progress=None, adapter_factory=Etabs, stop_requested=Non
     bases_by_candidate = {}
     for row in plan:
         bases_by_candidate.setdefault(row["candidate_id"], []).append(row)
-    manifest = dict(tool_version=__version__, started_utc=datetime.now(timezone.utc).isoformat(),
+    started = datetime.now(timezone.utc)
+    manifest = dict(tool_version=__version__, started_utc=started.isoformat(),
+                    started_local=started.astimezone().isoformat(timespec="seconds"),
                     source="ETABS_COM_live", state="running", python=platform.python_version(),
                     design_code="ACI 318-19", api_units="kN_m_C", completed_candidates=0,
                     total_candidates=config.planned_models(), issues=[],
@@ -147,6 +163,15 @@ def run(config, output, progress=None, adapter_factory=Etabs, stop_requested=Non
         if search:
             write("candidate_plan.csv", plan, final)
             write("size_search.csv", search_rows, final)
+        times = run_times(manifest)
+        ran = sum(r["status"] in ("complete", "failed") for r in runs)
+        write("run_info.csv", [dict(run=output.name, state=manifest["state"], date=times["date"], start_time=times["start_time"],
+                                    end_date=times["end_date"], end_time=times["end_time"] or "running",
+                                    duration=times["duration"], duration_s=times["duration_s"],
+                                    beam_lines=len(config.scenarios), beam_lines_finished=len(final_lines()),
+                                    etabs_models_run=manifest["completed_candidates"], etabs_models_planned=manifest["total_candidates"],
+                                    seconds_per_model=round(times["duration_s"]/ran, 1) if ran else None,
+                                    etabs_restarts=manifest.get("etabs_restarts", 0), tool_version=manifest["tool_version"])], final)
         write("manifest.json", json.dumps(manifest, indent=2), final)
         report()
     save()
@@ -396,7 +421,10 @@ def run(config, output, progress=None, adapter_factory=Etabs, stop_requested=Non
     except Exception as exc:
         manifest["state"] = "failed"
         manifest["issues"].append(f"{type(exc).__name__}: {exc}")
-    manifest["finished_utc"] = datetime.now(timezone.utc).isoformat()
+    finished = datetime.now(timezone.utc)
+    manifest.update(finished_utc=finished.isoformat(), finished_local=finished.astimezone().isoformat(timespec="seconds"))
+    times = run_times(manifest)
+    manifest.update(duration=times["duration"], duration_s=times["duration_s"])
     manifest["current_stage"] = "Finished" if manifest["state"].startswith("completed") else manifest["state"]
     save(final=True)
     manifest["current_stage"] = "Finished" if manifest["state"].startswith("completed") else manifest["state"]

@@ -40,6 +40,7 @@ Follow START_HERE.md. **ETABS Beam Lab Web.exe** is the simplest way to generate
 | ann_size.csv | The selected size of each beam line, one row per span: every ann_beams.csv column (same order) for the smallest size that passes analysis, design, flexure, shear and deflection on all spans, plus span ratios, L/D, wu_entered_kN_m and candidates_tested |
 | ann_size_train.csv | ann_size.csv cut to training columns: IDs and span position, size-independent inputs (spans, D as entered, L, f′c, fy, fyt, span ratios, L/D, wu_entered_kN_m), then the outputs b_mm, h_mm |
 | ann_size_wide.csv | The same answers as one row per beam line (spans side by side; outputs prefixed target_) |
+| run_info.csv | One row: run name, state, date, start time, end date and time, duration, beam lines (planned and finished), ETABS models run, seconds per model, ETABS restarts. manifest.json also records started_local, finished_local and duration |
 | ann_beams.csv | Beam/candidate inputs, Mu/Vu/Pu, nine required reinforcement targets, strength and deflection labels |
 | ann_deflection.csv | Compact DL/Total deflection inputs, limits, results, utilization and separate/combined labels |
 | ann_stations.csv | Concurrent station demands and matching ETABS-required reinforcement |

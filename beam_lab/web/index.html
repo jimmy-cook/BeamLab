@@ -102,6 +102,7 @@ svg text{font-family:"Segoe UI",system-ui,sans-serif}
   <div class="err" id="err"></div>
   <div class="bar"><i id="barFill"></i></div>
   <div class="stage" id="stage">Not running.</div>
+  <div class="stage" id="timeLine"></div>
   <details style="margin-top:16px"><summary>Previous runs</summary><div id="runs" class="note">None yet.</div></details>
 </aside>
 
@@ -233,6 +234,7 @@ function applyState(s) {
   $("barFill").style.width = total ? Math.min(100, 100*done/total) + "%" : "0";
   $("stage").textContent = s.busy ? `${done} / ${total} ETABS models · ${p.current_stage || "starting ETABS"}`
                                   : `${job.name}: ${(job.state || "").replaceAll("_", " ")}${job.error ? " · " + job.error : ""}`;
+  $("timeLine").textContent = s.busy && p.started_utc ? timeLine(new Date(p.started_utc), done, total) : "";
   if (job.live) drawLive(job.live, s.busy);
   if (job.summary) drawSummary(job.summary);
 }
@@ -386,9 +388,25 @@ function drawLadder(search) {
 }
 
 
+const hm = seconds => `${Math.floor(seconds/3600)} h ${String(Math.floor(seconds%3600/60)).padStart(2, "0")} min`;
+const clock = d => d.toLocaleTimeString([], {hour: "2-digit", minute: "2-digit"});
+function timeLine(start, done, total) {
+  // Elapsed time and, once a few models ran, the remaining time at the current pace (total is an upper bound).
+  const elapsed = (Date.now() - start)/1000;
+  let text = `Started ${start.toLocaleDateString()} ${clock(start)} · running ${hm(elapsed)}`;
+  if (done >= 3 && total > done) {
+    const left = elapsed/done*(total - done), end = new Date(Date.now() + left*1000);
+    text += ` · at most about ${hm(left)} left (by ${end.toLocaleDateString() === new Date().toLocaleDateString() ? "" : end.toLocaleDateString() + " "}${clock(end)})`;
+  }
+  return text;
+}
 function drawSummary(s) {
   $("finalSummary").innerHTML = `<table><tbody>
     <tr><th>Run</th><td>${esc(s.name)}</td></tr><tr><th>State</th><td>${esc((s.state || "").replaceAll("_", " "))}</td></tr>
+    <tr><th>Date</th><td>${esc(s.date ?? "–")}</td></tr>
+    <tr><th>Start</th><td>${esc(s.start_time ?? "–")}</td></tr>
+    <tr><th>End</th><td>${esc(s.end_time ? (s.end_date && s.end_date !== s.date ? s.end_date + " " : "") + s.end_time : "–")}</td></tr>
+    <tr><th>Duration</th><td><b>${esc(s.duration ?? "–")}</b></td></tr>
     <tr><th>ETABS models</th><td>${s.models ?? "–"}</td></tr><tr><th>Sizing rows</th><td><b>${s.sizing_rows}</b></td></tr>
     <tr><th>Seconds per model</th><td>${s.seconds_per_model ?? "–"}</td></tr><tr><th>Failed models</th><td>${s.failed_models}</td></tr>
   </tbody></table><button class="small" style="margin-top:8px" onclick='openFolder(${JSON.stringify(s.folder)})'>Open run folder</button>`;
@@ -401,7 +419,8 @@ async function openFolder(folder) { try { await api("/api/open", {folder}); } ca
 async function loadRuns() {
   try {
     const runs = await api("/api/runs");
-    $("runs").innerHTML = runs.length ? "<table><tbody>" + runs.map(r => `<tr><td>${esc(r.name)}<br><span class="muted">${esc((r.state || "").replaceAll("_", " "))} · ${r.models ?? "–"} models · ${r.sizing_rows} rows</span></td>
+    $("runs").innerHTML = runs.length ? "<table><tbody>" + runs.map(r => `<tr><td>${esc(r.name)}<br><span class="muted">${esc((r.state || "").replaceAll("_", " "))} · ${r.models ?? "–"} models · ${r.sizing_rows} rows</span>
+      <br><span class="muted">${esc(r.date ?? "")} ${esc(r.start_time ?? "")}${r.end_time ? " – " + esc(r.end_time) : ""}${r.duration ? " · " + esc(r.duration) : ""}</span></td>
       <td><button class="small" onclick='openFolder(${JSON.stringify(r.folder)})'>Open</button></td></tr>`).join("") + "</tbody></table>" : "None yet.";
   } catch (e) { $("runs").textContent = e.message; }
 }
