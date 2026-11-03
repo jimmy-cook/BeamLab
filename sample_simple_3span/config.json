@@ -1,0 +1,54 @@
+{
+  "scenarios": [
+    {
+      "name": "Three equal spans - simple limits",
+      "spans_m": [
+        6,
+        6,
+        6
+      ],
+      "dead_kN_m": [
+        20,
+        20,
+        20
+      ],
+      "live_kN_m": [
+        10,
+        10,
+        10
+      ],
+      "fc_MPa": 30,
+      "fy_MPa": 420,
+      "fyt_MPa": 420,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    }
+  ],
+  "sections_mm": [
+    [
+      300,
+      600
+    ]
+  ],
+  "stations_per_span": 21,
+  "max_models": 1,
+  "etabs_executable": "C:\\Program Files\\Computers and Structures\\ETABS 22\\ETABS.exe",
+  "check_combinations": true,
+  "loading_protocol": "research_full_udl",
+  "dead_load_basis": "total_including_self_weight",
+  "enforce_research_ranges": true,
+  "sampling_settings": null,
+  "serviceability": {
+    "enabled": true,
+    "limit_mode": "user_defined",
+    "total_basis": "immediate",
+    "category": null,
+    "sustained_live_fraction": null,
+    "duration_months": null,
+    "attachment_timing": null,
+    "attachment_tolerance_mm": null,
+    "dead_limit_divisor": 120,
+    "total_limit_divisor": 240
+  }
+}

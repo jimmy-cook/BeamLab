@@ -1,0 +1,45 @@
+{
+  "scenarios": [
+    {
+      "name": "simply_supported_6m",
+      "spans_m": [
+        6
+      ],
+      "dead_super_kN_m": [
+        15
+      ],
+      "live_kN_m": [
+        10
+      ],
+      "fc_MPa": 30,
+      "fy_MPa": 420,
+      "centroid_cover_mm": 60
+    },
+    {
+      "name": "two_equal_spans_6m",
+      "spans_m": [
+        6,
+        6
+      ],
+      "dead_super_kN_m": [
+        15,
+        15
+      ],
+      "live_kN_m": [
+        10,
+        10
+      ],
+      "fc_MPa": 30,
+      "fy_MPa": 420,
+      "centroid_cover_mm": 60
+    }
+  ],
+  "sections_mm": [
+    [
+      250,
+      450
+    ]
+  ],
+  "stations_per_span": 21,
+  "max_models": 2
+}

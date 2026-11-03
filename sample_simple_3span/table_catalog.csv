@@ -1,0 +1,112 @@
+﻿key,name,import_type
+Analysis Messages,Analysis Messages,0
+Analysis Options - Active Degrees of Freedom,Analysis Options - Active Degrees of Freedom,2
+Analysis Options - Analysis Model for Nonlinear Hinges,Analysis Options - Analysis Model for Nonlinear Hinges,2
+Analysis Options - Automatic Mesh Settings for Floors,Analysis Options - Automatic Mesh Settings for Floors,2
+Analysis Options - Automatic Rectangular Mesh Options for Walls,Analysis Options - Automatic Rectangular Mesh Options for Walls,2
+Analysis Options - Cracking Analysis Options,Analysis Options - Cracking Analysis Options,2
+Analysis Options - Design and Response Recovery Options,Analysis Options - Design and Response Recovery Options,3
+Analysis Options - SAPFire Options,Analysis Options - SAPFire Options,2
+Area Section Property Definitions - Summary,Area Section Property Definitions - Summary,0
+Assembled Joint Masses,Assembled Joint Masses,0
+Base Reactions,Base Reactions,0
+Beam Bays,Beam Bays,0
+Beam Object Connectivity,Beam Object Connectivity,2
+Composite Beam Design Preferences - AISC 360-16,Composite Beam Design Preferences - AISC 360-16,3
+Composite Column Design Preferences - AISC 360-16,Composite Column Design Preferences - AISC 360-16,3
+Concrete Beam Design Summary - ACI 318-19,Concrete Beam Design Summary - ACI 318-19,0
+Concrete Beam Flexure Envelope - ACI 318-19,Concrete Beam Flexure Envelope - ACI 318-19,0
+Concrete Beam Overwrites - ACI 318-19,Concrete Beam Overwrites - ACI 318-19,3
+Concrete Beam Shear Envelope - ACI 318-19,Concrete Beam Shear Envelope - ACI 318-19,0
+Concrete Column Design Summary - ACI 318-19,Concrete Column Design Summary - ACI 318-19,0
+Concrete Column PMM Envelope - ACI 318-19,Concrete Column PMM Envelope - ACI 318-19,0
+Concrete Column Shear Envelope - ACI 318-19,Concrete Column Shear Envelope - ACI 318-19,0
+Concrete Frame Design Load Combination Data,Concrete Frame Design Load Combination Data,3
+Concrete Frame Design Preferences - ACI 318-19,Concrete Frame Design Preferences - ACI 318-19,3
+Concrete Slab Design Overwrites - Punching Shear - General,Concrete Slab Design Overwrites - Punching Shear - General,3
+Concrete Slab Design Preferences - ACI 318-19,Concrete Slab Design Preferences - ACI 318-19,3
+Deck Property Definitions,Deck Property Definitions,2
+Design Forces - Beams,Design Forces - Beams,0
+Diaphragm Definitions,Diaphragm Definitions,2
+Diaphragm Forces,Diaphragm Forces,0
+Element Forces - Beams,Element Forces - Beams,0
+Element Joint Forces - Frame,Element Joint Forces - Frame,0
+Frame Assignments - End Length Offsets,Frame Assignments - End Length Offsets,2
+Frame Assignments - Frame Auto Mesh Options,Frame Assignments - Frame Auto Mesh Options,2
+Frame Assignments - Insertion Point,Frame Assignments - Insertion Point,2
+Frame Assignments - Output Stations,Frame Assignments - Output Stations,2
+Frame Assignments - Section Properties,Frame Assignments - Section Properties,2
+Frame Assignments - Summary,Frame Assignments - Summary,0
+Frame Loads Assignments - Distributed,Frame Loads Assignments - Distributed,2
+Frame Loads Assignments - Open Structure Wind Parameters,Frame Loads Assignments - Open Structure Wind Parameters,2
+Frame Section Property Definitions - Auto Select List,Frame Section Property Definitions - Auto Select List,2
+Frame Section Property Definitions - Concrete Beam Reinforcing,Frame Section Property Definitions - Concrete Beam Reinforcing,2
+Frame Section Property Definitions - Concrete Column Reinforcing,Frame Section Property Definitions - Concrete Column Reinforcing,2
+Frame Section Property Definitions - Concrete Rectangular,Frame Section Property Definitions - Concrete Rectangular,2
+Frame Section Property Definitions - Steel I/Wide Flange,Frame Section Property Definitions - Steel I/Wide Flange,2
+Frame Section Property Definitions - Summary,Frame Section Property Definitions - Summary,0
+Functions - Power Spectral Density - User Defined,Functions - Power Spectral Density - User Defined,2
+Functions - Response Spectrum - User Defined,Functions - Response Spectrum - User Defined,2
+Functions - Steady State - User Defined,Functions - Steady State - User Defined,2
+Functions - Time History - User Defined,Functions - Time History - User Defined,2
+Grid Definitions - General,Grid Definitions - General,2
+Grid Definitions - Grid Lines,Grid Definitions - Grid Lines,2
+Group Definitions,Group Definitions,2
+Joint Assignments - Restraints,Joint Assignments - Restraints,2
+Joint Assignments - Summary,Joint Assignments - Summary,0
+Joint Design Reactions,Joint Design Reactions,0
+Joint Displacements,Joint Displacements,0
+Joint Drifts,Joint Drifts,0
+Joint Reactions,Joint Reactions,0
+Link Property Definitions - Linear,Link Property Definitions - Linear,2
+Link Property Definitions - Summary,Link Property Definitions - Summary,0
+Load Case Definitions - Linear Static,Load Case Definitions - Linear Static,2
+Load Case Definitions - Summary,Load Case Definitions - Summary,0
+Load Combination Definitions,Load Combination Definitions,2
+Load Pattern Definitions,Load Pattern Definitions,2
+Mass Source Definition,Mass Source Definition,2
+Mass Summary by Group,Mass Summary by Group,0
+Mass Summary by Story,Mass Summary by Story,0
+Material List by Object Type,Material List by Object Type,0
+Material List by Section Property,Material List by Section Property,0
+Material List by Story,Material List by Story,0
+Material Properties - Acceptance Criteria,Material Properties - Acceptance Criteria,2
+Material Properties - Basic Mechanical Properties,Material Properties - Basic Mechanical Properties,2
+Material Properties - Concrete Data,Material Properties - Concrete Data,2
+Material Properties - Damping Parameters,Material Properties - Damping Parameters,2
+Material Properties - General,Material Properties - General,2
+Material Properties - Hysteresis Parameters - Concrete,Material Properties - Hysteresis Parameters - Concrete,2
+Material Properties - Rebar Data,Material Properties - Rebar Data,2
+Material Properties - Steel Data,Material Properties - Steel Data,2
+Material Properties - Tendon Data,Material Properties - Tendon Data,2
+Miscellaneous Options,Miscellaneous Options,3
+Modal Case Definitions - Eigen,Modal Case Definitions - Eigen,2
+Objects and Elements - Frames,Objects and Elements - Frames,0
+Objects and Elements - Joints,Objects and Elements - Joints,0
+Options - Colors - Display,Options - Colors - Display,3
+Options - Colors - Output,Options - Colors - Output,3
+Panel Zone Property Definitions,Panel Zone Property Definitions,2
+Pier Label Definitions,Pier Label Definitions,3
+Point Bays,Point Bays,0
+Point Object Connectivity,Point Object Connectivity,2
+Preferences - Graphics,Preferences - Graphics,3
+Preferences - Tolerance,Preferences - Tolerance,3
+Program Control,Program Control,3
+Project Information,Project Information,3
+Reinforcing Bar Sizes,Reinforcing Bar Sizes,2
+Shear Wall Design Preferences - ACI 318-19,Shear Wall Design Preferences - ACI 318-19,3
+Shear Wall Design Preferences - AISC 360-22 Composite,Shear Wall Design Preferences - AISC 360-22 Composite,3
+Slab Property Definitions,Slab Property Definitions,2
+Spandrel Label Definitions,Spandrel Label Definitions,3
+Steel Frame Design Preferences - AISC 360-16,Steel Frame Design Preferences - AISC 360-16,3
+Steel Joist Design Preferences - SJI-2010,Steel Joist Design Preferences - SJI-2010,3
+Story Definitions,Story Definitions,1
+Story Drifts,Story Drifts,0
+Story Forces,Story Forces,0
+Story Max Over Avg Displacements,Story Max Over Avg Displacements,0
+Story Max Over Avg Drifts,Story Max Over Avg Drifts,0
+Story Stiffness,Story Stiffness,0
+Tendon Section Properties,Tendon Section Properties,2
+Tower and Base Story Definitions,Tower and Base Story Definitions,1
+Tributary Area and LLRF,Tributary Area and LLRF,0
+Wall Property Definitions - Specified,Wall Property Definitions - Specified,2

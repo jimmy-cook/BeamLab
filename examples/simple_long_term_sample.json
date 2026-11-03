@@ -1,0 +1,47 @@
+{
+  "scenarios": [
+    {
+      "name": "Three equal spans - simple limits",
+      "spans_m": [
+        6,
+        6,
+        6
+      ],
+      "dead_kN_m": [
+        20,
+        20,
+        20
+      ],
+      "live_kN_m": [
+        10,
+        10,
+        10
+      ],
+      "fc_MPa": 30,
+      "fy_MPa": 420,
+      "fyt_MPa": 420,
+      "centroid_cover_mm": 60
+    }
+  ],
+  "sections_mm": [
+    [
+      300,
+      600
+    ]
+  ],
+  "stations_per_span": 21,
+  "max_models": 1,
+  "loading_protocol": "research_full_udl",
+  "dead_load_basis": "total_including_self_weight",
+  "enforce_research_ranges": true,
+  "check_combinations": true,
+  "serviceability": {
+    "enabled": true,
+    "limit_mode": "user_defined",
+    "total_basis": "long_term",
+    "dead_limit_divisor": 120,
+    "total_limit_divisor": 240,
+    "sustained_live_fraction": 0.0,
+    "duration_months": 60
+  }
+}

@@ -1,0 +1,549 @@
+{
+  "scenarios": [
+    {
+      "name": "Research 2032-0001",
+      "spans_m": [
+        6.5,
+        5.75,
+        5.25
+      ],
+      "dead_kN_m": [
+        131.031,
+        131.031,
+        131.031
+      ],
+      "live_kN_m": [
+        48.594,
+        48.594,
+        48.594
+      ],
+      "fc_MPa": 38.466,
+      "fy_MPa": 442.809,
+      "fyt_MPa": 354.02,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0002",
+      "spans_m": [
+        5.75,
+        5.25,
+        5.75
+      ],
+      "dead_kN_m": [
+        20.676,
+        20.676,
+        20.676
+      ],
+      "live_kN_m": [
+        16.701,
+        16.701,
+        16.701
+      ],
+      "fc_MPa": 45.779,
+      "fy_MPa": 441.59,
+      "fyt_MPa": 263.272,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0003",
+      "spans_m": [
+        9.0,
+        8.0,
+        6.0
+      ],
+      "dead_kN_m": [
+        80.881,
+        80.881,
+        80.881
+      ],
+      "live_kN_m": [
+        117.483,
+        117.483,
+        117.483
+      ],
+      "fc_MPa": 39.918,
+      "fy_MPa": 554.217,
+      "fyt_MPa": 236.579,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0004",
+      "spans_m": [
+        7.25,
+        10.0,
+        7.75
+      ],
+      "dead_kN_m": [
+        65.241,
+        65.241,
+        65.241
+      ],
+      "live_kN_m": [
+        32.189,
+        32.189,
+        32.189
+      ],
+      "fc_MPa": 30.953,
+      "fy_MPa": 385.762,
+      "fyt_MPa": 251.802,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0005",
+      "spans_m": [
+        9.5,
+        8.0,
+        10.5
+      ],
+      "dead_kN_m": [
+        44.231,
+        44.231,
+        44.231
+      ],
+      "live_kN_m": [
+        56.104,
+        56.104,
+        56.104
+      ],
+      "fc_MPa": 31.017,
+      "fy_MPa": 216.462,
+      "fyt_MPa": 265.92,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0006",
+      "spans_m": [
+        9.0,
+        11.75,
+        12.0
+      ],
+      "dead_kN_m": [
+        120.866,
+        120.866,
+        120.866
+      ],
+      "live_kN_m": [
+        30.996,
+        30.996,
+        30.996
+      ],
+      "fc_MPa": 39.18,
+      "fy_MPa": 546.454,
+      "fyt_MPa": 397.015,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0007",
+      "spans_m": [
+        5.25,
+        4.0,
+        3.75
+      ],
+      "dead_kN_m": [
+        15.922,
+        15.922,
+        15.922
+      ],
+      "live_kN_m": [
+        12.936,
+        12.936,
+        12.936
+      ],
+      "fc_MPa": 45.398,
+      "fy_MPa": 598.392,
+      "fyt_MPa": 255.082,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0008",
+      "spans_m": [
+        10.25,
+        12.0,
+        9.0
+      ],
+      "dead_kN_m": [
+        15.756,
+        15.756,
+        15.756
+      ],
+      "live_kN_m": [
+        13.566,
+        13.566,
+        13.566
+      ],
+      "fc_MPa": 25.923,
+      "fy_MPa": 323.738,
+      "fyt_MPa": 340.113,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0009",
+      "spans_m": [
+        8.5,
+        11.5,
+        11.75
+      ],
+      "dead_kN_m": [
+        125.128,
+        125.128,
+        125.128
+      ],
+      "live_kN_m": [
+        90.951,
+        90.951,
+        90.951
+      ],
+      "fc_MPa": 24.86,
+      "fy_MPa": 258.002,
+      "fyt_MPa": 406.842,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 2032-0010",
+      "spans_m": [
+        3.25,
+        4.5,
+        4.25
+      ],
+      "dead_kN_m": [
+        51.67,
+        51.67,
+        51.67
+      ],
+      "live_kN_m": [
+        45.448,
+        45.448,
+        45.448
+      ],
+      "fc_MPa": 41.581,
+      "fy_MPa": 351.585,
+      "fyt_MPa": 378.314,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    }
+  ],
+  "sections_mm": [
+    [
+      300,
+      350
+    ],
+    [
+      300,
+      375
+    ],
+    [
+      300,
+      400
+    ],
+    [
+      300,
+      425
+    ],
+    [
+      300,
+      450
+    ],
+    [
+      300,
+      475
+    ],
+    [
+      300,
+      500
+    ],
+    [
+      300,
+      525
+    ],
+    [
+      300,
+      550
+    ],
+    [
+      300,
+      575
+    ],
+    [
+      300,
+      600
+    ],
+    [
+      300,
+      625
+    ],
+    [
+      300,
+      650
+    ],
+    [
+      300,
+      675
+    ],
+    [
+      300,
+      700
+    ],
+    [
+      300,
+      725
+    ],
+    [
+      300,
+      750
+    ],
+    [
+      300,
+      775
+    ],
+    [
+      300,
+      800
+    ],
+    [
+      300,
+      825
+    ],
+    [
+      300,
+      850
+    ],
+    [
+      300,
+      875
+    ],
+    [
+      300,
+      900
+    ],
+    [
+      300,
+      925
+    ],
+    [
+      300,
+      950
+    ],
+    [
+      300,
+      975
+    ],
+    [
+      300,
+      1000
+    ],
+    [
+      400,
+      400
+    ],
+    [
+      400,
+      425
+    ],
+    [
+      400,
+      450
+    ],
+    [
+      400,
+      475
+    ],
+    [
+      400,
+      500
+    ],
+    [
+      400,
+      525
+    ],
+    [
+      400,
+      550
+    ],
+    [
+      400,
+      575
+    ],
+    [
+      400,
+      600
+    ],
+    [
+      400,
+      625
+    ],
+    [
+      400,
+      650
+    ],
+    [
+      400,
+      675
+    ],
+    [
+      400,
+      700
+    ],
+    [
+      400,
+      725
+    ],
+    [
+      400,
+      750
+    ],
+    [
+      400,
+      775
+    ],
+    [
+      400,
+      800
+    ],
+    [
+      400,
+      825
+    ],
+    [
+      400,
+      850
+    ],
+    [
+      400,
+      875
+    ],
+    [
+      400,
+      900
+    ],
+    [
+      400,
+      925
+    ],
+    [
+      400,
+      950
+    ],
+    [
+      400,
+      975
+    ],
+    [
+      400,
+      1000
+    ],
+    [
+      400,
+      1025
+    ],
+    [
+      400,
+      1050
+    ],
+    [
+      400,
+      1075
+    ],
+    [
+      400,
+      1100
+    ],
+    [
+      400,
+      1125
+    ],
+    [
+      400,
+      1150
+    ],
+    [
+      400,
+      1175
+    ],
+    [
+      400,
+      1200
+    ]
+  ],
+  "stations_per_span": 21,
+  "max_models": 110,
+  "etabs_executable": "C:\\Program Files\\Computers and Structures\\ETABS 22\\ETABS.exe",
+  "check_combinations": true,
+  "loading_protocol": "research_full_udl",
+  "dead_load_basis": "superimposed_plus_self_weight",
+  "enforce_research_ranges": true,
+  "min_width_depth_ratio": 0.3,
+  "max_width_depth_ratio": 1.0,
+  "min_span_depth_ratio": 4.0,
+  "size_search": true,
+  "sampling_settings": {
+    "count": 10,
+    "seed": 2032,
+    "spans_min": 3,
+    "spans_max": 3,
+    "span_min_mm": 3000,
+    "span_max_mm": 12000,
+    "dead_min": 10,
+    "dead_max": 150,
+    "live_min": 10,
+    "live_max": 150,
+    "fc_min": 20,
+    "fc_max": 50,
+    "fy_min": 200,
+    "fy_max": 600,
+    "fyt_min": 200,
+    "fyt_max": 420,
+    "width_min_mm": 300,
+    "width_max_mm": 900,
+    "depth_min_mm": 350,
+    "depth_max_mm": 1200,
+    "section_step_mm": 25,
+    "span_step_mm": 250,
+    "max_adjacent_span_ratio": 1.5,
+    "min_live_dead_ratio": 0.25,
+    "max_live_dead_ratio": 1.5,
+    "min_width_depth_ratio": 0.3,
+    "max_width_depth_ratio": 1.0,
+    "min_span_depth_ratio": 4.0,
+    "candidate_count": 6,
+    "stirrup_matches_fy": false,
+    "equal_spans": false,
+    "whole_unit_parameters": false,
+    "size_search": true,
+    "search_widths_mm": [
+      300,
+      400
+    ],
+    "dead_includes_self_weight": false
+  },
+  "serviceability": {
+    "enabled": true,
+    "limit_mode": "user_defined",
+    "total_basis": "immediate",
+    "category": null,
+    "sustained_live_fraction": null,
+    "duration_months": null,
+    "attachment_timing": null,
+    "attachment_tolerance_mm": null,
+    "dead_limit_divisor": 120.0,
+    "total_limit_divisor": 240.0
+  }
+}

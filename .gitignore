@@ -1,0 +1,8 @@
+__pycache__/
+.pytest_cache/
+.com_cache/
+*.egg-info/
+build/
+runs/
+dist/
+*.exe

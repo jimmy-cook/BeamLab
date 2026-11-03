@@ -1,0 +1,2530 @@
+{
+  "scenarios": [
+    {
+      "name": "Research 42-0001",
+      "spans_m": [
+        3.434,
+        3.434,
+        3.434
+      ],
+      "dead_kN_m": [
+        67.314,
+        67.314,
+        67.314
+      ],
+      "live_kN_m": [
+        70.99,
+        70.99,
+        70.99
+      ],
+      "fc_MPa": 38.39,
+      "fy_MPa": 464.951,
+      "fyt_MPa": 464.951,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0002",
+      "spans_m": [
+        7.557,
+        7.557,
+        7.557
+      ],
+      "dead_kN_m": [
+        119.974,
+        119.974,
+        119.974
+      ],
+      "live_kN_m": [
+        67.787,
+        67.787,
+        67.787
+      ],
+      "fc_MPa": 20.212,
+      "fy_MPa": 435.514,
+      "fyt_MPa": 435.514,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0003",
+      "spans_m": [
+        5.547,
+        5.547,
+        5.547
+      ],
+      "dead_kN_m": [
+        120.785,
+        120.785,
+        120.785
+      ],
+      "live_kN_m": [
+        99.194,
+        99.194,
+        99.194
+      ],
+      "fc_MPa": 27.055,
+      "fy_MPa": 345.684,
+      "fyt_MPa": 345.684,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0004",
+      "spans_m": [
+        4.584,
+        4.584,
+        4.584
+      ],
+      "dead_kN_m": [
+        36.793,
+        36.793,
+        36.793
+      ],
+      "live_kN_m": [
+        34.312,
+        34.312,
+        34.312
+      ],
+      "fc_MPa": 31.763,
+      "fy_MPa": 399.191,
+      "fyt_MPa": 399.191,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0005",
+      "spans_m": [
+        11.785,
+        11.785,
+        11.785
+      ],
+      "dead_kN_m": [
+        79.342,
+        79.342,
+        79.342
+      ],
+      "live_kN_m": [
+        21.39,
+        21.39,
+        21.39
+      ],
+      "fc_MPa": 24.09,
+      "fy_MPa": 440.87,
+      "fyt_MPa": 440.87,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0006",
+      "spans_m": [
+        6.15,
+        6.15,
+        6.15
+      ],
+      "dead_kN_m": [
+        30.656,
+        30.656,
+        30.656
+      ],
+      "live_kN_m": [
+        86.854,
+        86.854,
+        86.854
+      ],
+      "fc_MPa": 22.279,
+      "fy_MPa": 389.6,
+      "fyt_MPa": 389.6,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0007",
+      "spans_m": [
+        6.814,
+        6.814,
+        6.814
+      ],
+      "dead_kN_m": [
+        69.742,
+        69.742,
+        69.742
+      ],
+      "live_kN_m": [
+        85.861,
+        85.861,
+        85.861
+      ],
+      "fc_MPa": 23.309,
+      "fy_MPa": 241.833,
+      "fyt_MPa": 241.833,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0008",
+      "spans_m": [
+        5.664,
+        5.664,
+        5.664
+      ],
+      "dead_kN_m": [
+        82.869,
+        82.869,
+        82.869
+      ],
+      "live_kN_m": [
+        128.858,
+        128.858,
+        128.858
+      ],
+      "fc_MPa": 32.13,
+      "fy_MPa": 391.277,
+      "fyt_MPa": 391.277,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0009",
+      "spans_m": [
+        5.803,
+        5.803,
+        5.803
+      ],
+      "dead_kN_m": [
+        64.921,
+        64.921,
+        64.921
+      ],
+      "live_kN_m": [
+        79.986,
+        79.986,
+        79.986
+      ],
+      "fc_MPa": 37.502,
+      "fy_MPa": 237.435,
+      "fyt_MPa": 237.435,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0010",
+      "spans_m": [
+        7.422,
+        7.422,
+        7.422
+      ],
+      "dead_kN_m": [
+        52.834,
+        52.834,
+        52.834
+      ],
+      "live_kN_m": [
+        131.178,
+        131.178,
+        131.178
+      ],
+      "fc_MPa": 38.25,
+      "fy_MPa": 398.943,
+      "fyt_MPa": 398.943,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0011",
+      "spans_m": [
+        3.525,
+        3.525,
+        3.525
+      ],
+      "dead_kN_m": [
+        95.008,
+        95.008,
+        95.008
+      ],
+      "live_kN_m": [
+        24.663,
+        24.663,
+        24.663
+      ],
+      "fc_MPa": 30.336,
+      "fy_MPa": 320.087,
+      "fyt_MPa": 320.087,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0012",
+      "spans_m": [
+        8.155,
+        8.155,
+        8.155
+      ],
+      "dead_kN_m": [
+        80.186,
+        80.186,
+        80.186
+      ],
+      "live_kN_m": [
+        27.35,
+        27.35,
+        27.35
+      ],
+      "fc_MPa": 26.967,
+      "fy_MPa": 310.615,
+      "fyt_MPa": 310.615,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0013",
+      "spans_m": [
+        7.339,
+        7.339,
+        7.339
+      ],
+      "dead_kN_m": [
+        113.712,
+        113.712,
+        113.712
+      ],
+      "live_kN_m": [
+        130.285,
+        130.285,
+        130.285
+      ],
+      "fc_MPa": 24.575,
+      "fy_MPa": 274.905,
+      "fyt_MPa": 274.905,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0014",
+      "spans_m": [
+        9.543,
+        9.543,
+        9.543
+      ],
+      "dead_kN_m": [
+        78.876,
+        78.876,
+        78.876
+      ],
+      "live_kN_m": [
+        122.311,
+        122.311,
+        122.311
+      ],
+      "fc_MPa": 31.861,
+      "fy_MPa": 505.939,
+      "fyt_MPa": 505.939,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0015",
+      "spans_m": [
+        4.489,
+        4.489,
+        4.489
+      ],
+      "dead_kN_m": [
+        46.262,
+        46.262,
+        46.262
+      ],
+      "live_kN_m": [
+        143.569,
+        143.569,
+        143.569
+      ],
+      "fc_MPa": 21.543,
+      "fy_MPa": 458.744,
+      "fyt_MPa": 458.744,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0016",
+      "spans_m": [
+        4.04,
+        4.04,
+        4.04
+      ],
+      "dead_kN_m": [
+        50.066,
+        50.066,
+        50.066
+      ],
+      "live_kN_m": [
+        51.938,
+        51.938,
+        51.938
+      ],
+      "fc_MPa": 32.608,
+      "fy_MPa": 421.333,
+      "fyt_MPa": 421.333,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0017",
+      "spans_m": [
+        3.188,
+        3.188,
+        3.188
+      ],
+      "dead_kN_m": [
+        132.696,
+        132.696,
+        132.696
+      ],
+      "live_kN_m": [
+        148.704,
+        148.704,
+        148.704
+      ],
+      "fc_MPa": 23.753,
+      "fy_MPa": 331.813,
+      "fyt_MPa": 331.813,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0018",
+      "spans_m": [
+        10.123,
+        10.123,
+        10.123
+      ],
+      "dead_kN_m": [
+        99.174,
+        99.174,
+        99.174
+      ],
+      "live_kN_m": [
+        39.242,
+        39.242,
+        39.242
+      ],
+      "fc_MPa": 25.182,
+      "fy_MPa": 353.878,
+      "fyt_MPa": 353.878,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0019",
+      "spans_m": [
+        5.927,
+        5.927,
+        5.927
+      ],
+      "dead_kN_m": [
+        10.85,
+        10.85,
+        10.85
+      ],
+      "live_kN_m": [
+        79.045,
+        79.045,
+        79.045
+      ],
+      "fc_MPa": 36.635,
+      "fy_MPa": 462.451,
+      "fyt_MPa": 462.451,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0020",
+      "spans_m": [
+        5.504,
+        5.504,
+        5.504
+      ],
+      "dead_kN_m": [
+        88.235,
+        88.235,
+        88.235
+      ],
+      "live_kN_m": [
+        143.08,
+        143.08,
+        143.08
+      ],
+      "fc_MPa": 32.252,
+      "fy_MPa": 304.286,
+      "fyt_MPa": 304.286,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0021",
+      "spans_m": [
+        8.31,
+        8.31,
+        8.31
+      ],
+      "dead_kN_m": [
+        149.029,
+        149.029,
+        149.029
+      ],
+      "live_kN_m": [
+        10.149,
+        10.149,
+        10.149
+      ],
+      "fc_MPa": 36.01,
+      "fy_MPa": 514.019,
+      "fyt_MPa": 514.019,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0022",
+      "spans_m": [
+        6.923,
+        6.923,
+        6.923
+      ],
+      "dead_kN_m": [
+        39.325,
+        39.325,
+        39.325
+      ],
+      "live_kN_m": [
+        105.153,
+        105.153,
+        105.153
+      ],
+      "fc_MPa": 21.898,
+      "fy_MPa": 361.225,
+      "fyt_MPa": 361.225,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0023",
+      "spans_m": [
+        4.133,
+        4.133,
+        4.133
+      ],
+      "dead_kN_m": [
+        30.645,
+        30.645,
+        30.645
+      ],
+      "live_kN_m": [
+        32.453,
+        32.453,
+        32.453
+      ],
+      "fc_MPa": 37.455,
+      "fy_MPa": 454.798,
+      "fyt_MPa": 454.798,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0024",
+      "spans_m": [
+        5.705,
+        5.705,
+        5.705
+      ],
+      "dead_kN_m": [
+        43.657,
+        43.657,
+        43.657
+      ],
+      "live_kN_m": [
+        134.592,
+        134.592,
+        134.592
+      ],
+      "fc_MPa": 28.685,
+      "fy_MPa": 488.255,
+      "fyt_MPa": 488.255,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0025",
+      "spans_m": [
+        9.537,
+        9.537,
+        9.537
+      ],
+      "dead_kN_m": [
+        65.521,
+        65.521,
+        65.521
+      ],
+      "live_kN_m": [
+        62.73,
+        62.73,
+        62.73
+      ],
+      "fc_MPa": 32.236,
+      "fy_MPa": 363.429,
+      "fyt_MPa": 363.429,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0026",
+      "spans_m": [
+        7.061,
+        7.061,
+        7.061
+      ],
+      "dead_kN_m": [
+        145.679,
+        145.679,
+        145.679
+      ],
+      "live_kN_m": [
+        128.354,
+        128.354,
+        128.354
+      ],
+      "fc_MPa": 27.362,
+      "fy_MPa": 263.441,
+      "fyt_MPa": 263.441,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0027",
+      "spans_m": [
+        6.77,
+        6.77,
+        6.77
+      ],
+      "dead_kN_m": [
+        98.627,
+        98.627,
+        98.627
+      ],
+      "live_kN_m": [
+        15.514,
+        15.514,
+        15.514
+      ],
+      "fc_MPa": 39.282,
+      "fy_MPa": 508.443,
+      "fyt_MPa": 508.443,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0028",
+      "spans_m": [
+        6.75,
+        6.75,
+        6.75
+      ],
+      "dead_kN_m": [
+        11.885,
+        11.885,
+        11.885
+      ],
+      "live_kN_m": [
+        28.61,
+        28.61,
+        28.61
+      ],
+      "fc_MPa": 22.208,
+      "fy_MPa": 230.866,
+      "fyt_MPa": 230.866,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0029",
+      "spans_m": [
+        6.899,
+        6.899,
+        6.899
+      ],
+      "dead_kN_m": [
+        96.619,
+        96.619,
+        96.619
+      ],
+      "live_kN_m": [
+        28.574,
+        28.574,
+        28.574
+      ],
+      "fc_MPa": 29.125,
+      "fy_MPa": 469.565,
+      "fyt_MPa": 469.565,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0030",
+      "spans_m": [
+        10.744,
+        10.744,
+        10.744
+      ],
+      "dead_kN_m": [
+        66.16,
+        66.16,
+        66.16
+      ],
+      "live_kN_m": [
+        44.684,
+        44.684,
+        44.684
+      ],
+      "fc_MPa": 27.962,
+      "fy_MPa": 499.391,
+      "fyt_MPa": 499.391,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0031",
+      "spans_m": [
+        4.588,
+        4.588,
+        4.588
+      ],
+      "dead_kN_m": [
+        116.708,
+        116.708,
+        116.708
+      ],
+      "live_kN_m": [
+        59.914,
+        59.914,
+        59.914
+      ],
+      "fc_MPa": 34.124,
+      "fy_MPa": 249.453,
+      "fyt_MPa": 249.453,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0032",
+      "spans_m": [
+        3.887,
+        3.887,
+        3.887
+      ],
+      "dead_kN_m": [
+        121.038,
+        121.038,
+        121.038
+      ],
+      "live_kN_m": [
+        117.767,
+        117.767,
+        117.767
+      ],
+      "fc_MPa": 23.224,
+      "fy_MPa": 444.855,
+      "fyt_MPa": 444.855,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0033",
+      "spans_m": [
+        7.073,
+        7.073,
+        7.073
+      ],
+      "dead_kN_m": [
+        115.544,
+        115.544,
+        115.544
+      ],
+      "live_kN_m": [
+        98.946,
+        98.946,
+        98.946
+      ],
+      "fc_MPa": 26.278,
+      "fy_MPa": 257.288,
+      "fyt_MPa": 257.288,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0034",
+      "spans_m": [
+        6.006,
+        6.006,
+        6.006
+      ],
+      "dead_kN_m": [
+        127.601,
+        127.601,
+        127.601
+      ],
+      "live_kN_m": [
+        46.747,
+        46.747,
+        46.747
+      ],
+      "fc_MPa": 29.127,
+      "fy_MPa": 421.187,
+      "fyt_MPa": 421.187,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0035",
+      "spans_m": [
+        4.604,
+        4.604,
+        4.604
+      ],
+      "dead_kN_m": [
+        75.485,
+        75.485,
+        75.485
+      ],
+      "live_kN_m": [
+        29.761,
+        29.761,
+        29.761
+      ],
+      "fc_MPa": 21.657,
+      "fy_MPa": 432.328,
+      "fyt_MPa": 432.328,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0036",
+      "spans_m": [
+        9.658,
+        9.658,
+        9.658
+      ],
+      "dead_kN_m": [
+        34.448,
+        34.448,
+        34.448
+      ],
+      "live_kN_m": [
+        71.965,
+        71.965,
+        71.965
+      ],
+      "fc_MPa": 35.913,
+      "fy_MPa": 287.194,
+      "fyt_MPa": 287.194,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0037",
+      "spans_m": [
+        5.697,
+        5.697,
+        5.697
+      ],
+      "dead_kN_m": [
+        66.032,
+        66.032,
+        66.032
+      ],
+      "live_kN_m": [
+        115.13,
+        115.13,
+        115.13
+      ],
+      "fc_MPa": 32.418,
+      "fy_MPa": 230.741,
+      "fyt_MPa": 230.741,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0038",
+      "spans_m": [
+        7.673,
+        7.673,
+        7.673
+      ],
+      "dead_kN_m": [
+        112.346,
+        112.346,
+        112.346
+      ],
+      "live_kN_m": [
+        79.521,
+        79.521,
+        79.521
+      ],
+      "fc_MPa": 33.861,
+      "fy_MPa": 438.555,
+      "fyt_MPa": 438.555,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0039",
+      "spans_m": [
+        6.566,
+        6.566,
+        6.566
+      ],
+      "dead_kN_m": [
+        50.579,
+        50.579,
+        50.579
+      ],
+      "live_kN_m": [
+        59.78,
+        59.78,
+        59.78
+      ],
+      "fc_MPa": 21.916,
+      "fy_MPa": 355.56,
+      "fyt_MPa": 355.56,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0040",
+      "spans_m": [
+        10.811,
+        10.811,
+        10.811
+      ],
+      "dead_kN_m": [
+        92.209,
+        92.209,
+        92.209
+      ],
+      "live_kN_m": [
+        24.985,
+        24.985,
+        24.985
+      ],
+      "fc_MPa": 36.477,
+      "fy_MPa": 226.289,
+      "fyt_MPa": 226.289,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0041",
+      "spans_m": [
+        6.044,
+        6.044,
+        6.044
+      ],
+      "dead_kN_m": [
+        24.91,
+        24.91,
+        24.91
+      ],
+      "live_kN_m": [
+        143.124,
+        143.124,
+        143.124
+      ],
+      "fc_MPa": 22.245,
+      "fy_MPa": 242.001,
+      "fyt_MPa": 242.001,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0042",
+      "spans_m": [
+        7.033,
+        7.033,
+        7.033
+      ],
+      "dead_kN_m": [
+        71.657,
+        71.657,
+        71.657
+      ],
+      "live_kN_m": [
+        115.847,
+        115.847,
+        115.847
+      ],
+      "fc_MPa": 38.97,
+      "fy_MPa": 262.855,
+      "fyt_MPa": 262.855,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0043",
+      "spans_m": [
+        11.565,
+        11.565,
+        11.565
+      ],
+      "dead_kN_m": [
+        31.491,
+        31.491,
+        31.491
+      ],
+      "live_kN_m": [
+        119.897,
+        119.897,
+        119.897
+      ],
+      "fc_MPa": 30.366,
+      "fy_MPa": 506.012,
+      "fyt_MPa": 506.012,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0044",
+      "spans_m": [
+        7.351,
+        7.351,
+        7.351
+      ],
+      "dead_kN_m": [
+        63.545,
+        63.545,
+        63.545
+      ],
+      "live_kN_m": [
+        92.361,
+        92.361,
+        92.361
+      ],
+      "fc_MPa": 32.969,
+      "fy_MPa": 325.14,
+      "fyt_MPa": 325.14,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0045",
+      "spans_m": [
+        4.188,
+        4.188,
+        4.188
+      ],
+      "dead_kN_m": [
+        88.642,
+        88.642,
+        88.642
+      ],
+      "live_kN_m": [
+        129.858,
+        129.858,
+        129.858
+      ],
+      "fc_MPa": 20.305,
+      "fy_MPa": 365.767,
+      "fyt_MPa": 365.767,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0046",
+      "spans_m": [
+        6.492,
+        6.492,
+        6.492
+      ],
+      "dead_kN_m": [
+        36.209,
+        36.209,
+        36.209
+      ],
+      "live_kN_m": [
+        29.204,
+        29.204,
+        29.204
+      ],
+      "fc_MPa": 36.576,
+      "fy_MPa": 481.875,
+      "fyt_MPa": 481.875,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0047",
+      "spans_m": [
+        7.002,
+        7.002,
+        7.002
+      ],
+      "dead_kN_m": [
+        44.722,
+        44.722,
+        44.722
+      ],
+      "live_kN_m": [
+        101.49,
+        101.49,
+        101.49
+      ],
+      "fc_MPa": 32.108,
+      "fy_MPa": 236.066,
+      "fyt_MPa": 236.066,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0048",
+      "spans_m": [
+        7.956,
+        7.956,
+        7.956
+      ],
+      "dead_kN_m": [
+        51.352,
+        51.352,
+        51.352
+      ],
+      "live_kN_m": [
+        124.867,
+        124.867,
+        124.867
+      ],
+      "fc_MPa": 37.332,
+      "fy_MPa": 484.802,
+      "fyt_MPa": 484.802,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0049",
+      "spans_m": [
+        7.333,
+        7.333,
+        7.333
+      ],
+      "dead_kN_m": [
+        88.48,
+        88.48,
+        88.48
+      ],
+      "live_kN_m": [
+        37.154,
+        37.154,
+        37.154
+      ],
+      "fc_MPa": 23.782,
+      "fy_MPa": 270.407,
+      "fyt_MPa": 270.407,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0050",
+      "spans_m": [
+        6.45,
+        6.45,
+        6.45
+      ],
+      "dead_kN_m": [
+        50.749,
+        50.749,
+        50.749
+      ],
+      "live_kN_m": [
+        81.394,
+        81.394,
+        81.394
+      ],
+      "fc_MPa": 31.235,
+      "fy_MPa": 347.721,
+      "fyt_MPa": 347.721,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0051",
+      "spans_m": [
+        7.114,
+        7.114,
+        7.114
+      ],
+      "dead_kN_m": [
+        79.201,
+        79.201,
+        79.201
+      ],
+      "live_kN_m": [
+        142.489,
+        142.489,
+        142.489
+      ],
+      "fc_MPa": 21.664,
+      "fy_MPa": 456.131,
+      "fyt_MPa": 456.131,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0052",
+      "spans_m": [
+        3.058,
+        3.058,
+        3.058
+      ],
+      "dead_kN_m": [
+        121.037,
+        121.037,
+        121.037
+      ],
+      "live_kN_m": [
+        82.53,
+        82.53,
+        82.53
+      ],
+      "fc_MPa": 30.929,
+      "fy_MPa": 223.114,
+      "fyt_MPa": 223.114,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0053",
+      "spans_m": [
+        10.007,
+        10.007,
+        10.007
+      ],
+      "dead_kN_m": [
+        78.67,
+        78.67,
+        78.67
+      ],
+      "live_kN_m": [
+        52.357,
+        52.357,
+        52.357
+      ],
+      "fc_MPa": 38.379,
+      "fy_MPa": 431.649,
+      "fyt_MPa": 431.649,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0054",
+      "spans_m": [
+        11.938,
+        11.938,
+        11.938
+      ],
+      "dead_kN_m": [
+        39.327,
+        39.327,
+        39.327
+      ],
+      "live_kN_m": [
+        29.724,
+        29.724,
+        29.724
+      ],
+      "fc_MPa": 21.18,
+      "fy_MPa": 278.147,
+      "fyt_MPa": 278.147,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0055",
+      "spans_m": [
+        3.685,
+        3.685,
+        3.685
+      ],
+      "dead_kN_m": [
+        48.821,
+        48.821,
+        48.821
+      ],
+      "live_kN_m": [
+        122.666,
+        122.666,
+        122.666
+      ],
+      "fc_MPa": 30.101,
+      "fy_MPa": 266.818,
+      "fyt_MPa": 266.818,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0056",
+      "spans_m": [
+        7.088,
+        7.088,
+        7.088
+      ],
+      "dead_kN_m": [
+        20.458,
+        20.458,
+        20.458
+      ],
+      "live_kN_m": [
+        103.797,
+        103.797,
+        103.797
+      ],
+      "fc_MPa": 23.368,
+      "fy_MPa": 310.14,
+      "fyt_MPa": 310.14,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0057",
+      "spans_m": [
+        5.662,
+        5.662,
+        5.662
+      ],
+      "dead_kN_m": [
+        116.529,
+        116.529,
+        116.529
+      ],
+      "live_kN_m": [
+        50.515,
+        50.515,
+        50.515
+      ],
+      "fc_MPa": 25.801,
+      "fy_MPa": 324.118,
+      "fyt_MPa": 324.118,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0058",
+      "spans_m": [
+        9.745,
+        9.745,
+        9.745
+      ],
+      "dead_kN_m": [
+        16.497,
+        16.497,
+        16.497
+      ],
+      "live_kN_m": [
+        57.018,
+        57.018,
+        57.018
+      ],
+      "fc_MPa": 28.131,
+      "fy_MPa": 374.16,
+      "fyt_MPa": 374.16,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0059",
+      "spans_m": [
+        3.634,
+        3.634,
+        3.634
+      ],
+      "dead_kN_m": [
+        51.732,
+        51.732,
+        51.732
+      ],
+      "live_kN_m": [
+        38.336,
+        38.336,
+        38.336
+      ],
+      "fc_MPa": 35.423,
+      "fy_MPa": 400.562,
+      "fyt_MPa": 400.562,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0060",
+      "spans_m": [
+        8.0,
+        8.0,
+        8.0
+      ],
+      "dead_kN_m": [
+        62.316,
+        62.316,
+        62.316
+      ],
+      "live_kN_m": [
+        130.665,
+        130.665,
+        130.665
+      ],
+      "fc_MPa": 27.457,
+      "fy_MPa": 383.321,
+      "fyt_MPa": 383.321,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0061",
+      "spans_m": [
+        8.378,
+        8.378,
+        8.378
+      ],
+      "dead_kN_m": [
+        16.203,
+        16.203,
+        16.203
+      ],
+      "live_kN_m": [
+        60.627,
+        60.627,
+        60.627
+      ],
+      "fc_MPa": 29.129,
+      "fy_MPa": 408.91,
+      "fyt_MPa": 408.91,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0062",
+      "spans_m": [
+        9.548,
+        9.548,
+        9.548
+      ],
+      "dead_kN_m": [
+        83.17,
+        83.17,
+        83.17
+      ],
+      "live_kN_m": [
+        102.05,
+        102.05,
+        102.05
+      ],
+      "fc_MPa": 37.57,
+      "fy_MPa": 467.075,
+      "fyt_MPa": 467.075,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0063",
+      "spans_m": [
+        5.925,
+        5.925,
+        5.925
+      ],
+      "dead_kN_m": [
+        17.235,
+        17.235,
+        17.235
+      ],
+      "live_kN_m": [
+        40.236,
+        40.236,
+        40.236
+      ],
+      "fc_MPa": 39.024,
+      "fy_MPa": 336.951,
+      "fyt_MPa": 336.951,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0064",
+      "spans_m": [
+        10.119,
+        10.119,
+        10.119
+      ],
+      "dead_kN_m": [
+        20.028,
+        20.028,
+        20.028
+      ],
+      "live_kN_m": [
+        38.417,
+        38.417,
+        38.417
+      ],
+      "fc_MPa": 31.327,
+      "fy_MPa": 512.775,
+      "fyt_MPa": 512.775,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0065",
+      "spans_m": [
+        9.311,
+        9.311,
+        9.311
+      ],
+      "dead_kN_m": [
+        124.398,
+        124.398,
+        124.398
+      ],
+      "live_kN_m": [
+        144.066,
+        144.066,
+        144.066
+      ],
+      "fc_MPa": 38.893,
+      "fy_MPa": 260.631,
+      "fyt_MPa": 260.631,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0066",
+      "spans_m": [
+        3.027,
+        3.027,
+        3.027
+      ],
+      "dead_kN_m": [
+        76.773,
+        76.773,
+        76.773
+      ],
+      "live_kN_m": [
+        21.635,
+        21.635,
+        21.635
+      ],
+      "fc_MPa": 37.036,
+      "fy_MPa": 428.619,
+      "fyt_MPa": 428.619,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0067",
+      "spans_m": [
+        8.409,
+        8.409,
+        8.409
+      ],
+      "dead_kN_m": [
+        105.478,
+        105.478,
+        105.478
+      ],
+      "live_kN_m": [
+        123.062,
+        123.062,
+        123.062
+      ],
+      "fc_MPa": 30.286,
+      "fy_MPa": 236.686,
+      "fyt_MPa": 236.686,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0068",
+      "spans_m": [
+        9.691,
+        9.691,
+        9.691
+      ],
+      "dead_kN_m": [
+        88.727,
+        88.727,
+        88.727
+      ],
+      "live_kN_m": [
+        142.939,
+        142.939,
+        142.939
+      ],
+      "fc_MPa": 30.688,
+      "fy_MPa": 362.154,
+      "fyt_MPa": 362.154,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0069",
+      "spans_m": [
+        9.888,
+        9.888,
+        9.888
+      ],
+      "dead_kN_m": [
+        87.504,
+        87.504,
+        87.504
+      ],
+      "live_kN_m": [
+        43.367,
+        43.367,
+        43.367
+      ],
+      "fc_MPa": 32.423,
+      "fy_MPa": 300.579,
+      "fyt_MPa": 300.579,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0070",
+      "spans_m": [
+        3.006,
+        3.006,
+        3.006
+      ],
+      "dead_kN_m": [
+        88.892,
+        88.892,
+        88.892
+      ],
+      "live_kN_m": [
+        116.45,
+        116.45,
+        116.45
+      ],
+      "fc_MPa": 29.957,
+      "fy_MPa": 487.276,
+      "fyt_MPa": 487.276,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0071",
+      "spans_m": [
+        8.279,
+        8.279,
+        8.279
+      ],
+      "dead_kN_m": [
+        65.098,
+        65.098,
+        65.098
+      ],
+      "live_kN_m": [
+        122.692,
+        122.692,
+        122.692
+      ],
+      "fc_MPa": 35.236,
+      "fy_MPa": 504.079,
+      "fyt_MPa": 504.079,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0072",
+      "spans_m": [
+        10.752,
+        10.752,
+        10.752
+      ],
+      "dead_kN_m": [
+        125.909,
+        125.909,
+        125.909
+      ],
+      "live_kN_m": [
+        66.02,
+        66.02,
+        66.02
+      ],
+      "fc_MPa": 25.56,
+      "fy_MPa": 468.002,
+      "fyt_MPa": 468.002,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0073",
+      "spans_m": [
+        4.53,
+        4.53,
+        4.53
+      ],
+      "dead_kN_m": [
+        84.392,
+        84.392,
+        84.392
+      ],
+      "live_kN_m": [
+        145.122,
+        145.122,
+        145.122
+      ],
+      "fc_MPa": 27.696,
+      "fy_MPa": 375.735,
+      "fyt_MPa": 375.735,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0074",
+      "spans_m": [
+        3.4,
+        3.4,
+        3.4
+      ],
+      "dead_kN_m": [
+        68.888,
+        68.888,
+        68.888
+      ],
+      "live_kN_m": [
+        62.2,
+        62.2,
+        62.2
+      ],
+      "fc_MPa": 21.514,
+      "fy_MPa": 277.255,
+      "fyt_MPa": 277.255,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0075",
+      "spans_m": [
+        9.79,
+        9.79,
+        9.79
+      ],
+      "dead_kN_m": [
+        134.554,
+        134.554,
+        134.554
+      ],
+      "live_kN_m": [
+        29.091,
+        29.091,
+        29.091
+      ],
+      "fc_MPa": 38.863,
+      "fy_MPa": 438.769,
+      "fyt_MPa": 438.769,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0076",
+      "spans_m": [
+        6.997,
+        6.997,
+        6.997
+      ],
+      "dead_kN_m": [
+        110.657,
+        110.657,
+        110.657
+      ],
+      "live_kN_m": [
+        139.598,
+        139.598,
+        139.598
+      ],
+      "fc_MPa": 24.835,
+      "fy_MPa": 409.533,
+      "fyt_MPa": 409.533,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0077",
+      "spans_m": [
+        5.881,
+        5.881,
+        5.881
+      ],
+      "dead_kN_m": [
+        37.941,
+        37.941,
+        37.941
+      ],
+      "live_kN_m": [
+        121.449,
+        121.449,
+        121.449
+      ],
+      "fc_MPa": 36.972,
+      "fy_MPa": 314.735,
+      "fyt_MPa": 314.735,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0078",
+      "spans_m": [
+        10.478,
+        10.478,
+        10.478
+      ],
+      "dead_kN_m": [
+        23.164,
+        23.164,
+        23.164
+      ],
+      "live_kN_m": [
+        75.325,
+        75.325,
+        75.325
+      ],
+      "fc_MPa": 24.369,
+      "fy_MPa": 263.626,
+      "fyt_MPa": 263.626,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0079",
+      "spans_m": [
+        11.27,
+        11.27,
+        11.27
+      ],
+      "dead_kN_m": [
+        149.233,
+        149.233,
+        149.233
+      ],
+      "live_kN_m": [
+        93.177,
+        93.177,
+        93.177
+      ],
+      "fc_MPa": 33.983,
+      "fy_MPa": 432.035,
+      "fyt_MPa": 432.035,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0080",
+      "spans_m": [
+        7.246,
+        7.246,
+        7.246
+      ],
+      "dead_kN_m": [
+        51.722,
+        51.722,
+        51.722
+      ],
+      "live_kN_m": [
+        134.433,
+        134.433,
+        134.433
+      ],
+      "fc_MPa": 28.101,
+      "fy_MPa": 435.966,
+      "fyt_MPa": 435.966,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0081",
+      "spans_m": [
+        7.499,
+        7.499,
+        7.499
+      ],
+      "dead_kN_m": [
+        146.655,
+        146.655,
+        146.655
+      ],
+      "live_kN_m": [
+        137.034,
+        137.034,
+        137.034
+      ],
+      "fc_MPa": 34.413,
+      "fy_MPa": 325.433,
+      "fyt_MPa": 325.433,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0082",
+      "spans_m": [
+        8.502,
+        8.502,
+        8.502
+      ],
+      "dead_kN_m": [
+        84.901,
+        84.901,
+        84.901
+      ],
+      "live_kN_m": [
+        71.471,
+        71.471,
+        71.471
+      ],
+      "fc_MPa": 30.476,
+      "fy_MPa": 342.456,
+      "fyt_MPa": 342.456,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0083",
+      "spans_m": [
+        9.275,
+        9.275,
+        9.275
+      ],
+      "dead_kN_m": [
+        46.273,
+        46.273,
+        46.273
+      ],
+      "live_kN_m": [
+        49.539,
+        49.539,
+        49.539
+      ],
+      "fc_MPa": 25.007,
+      "fy_MPa": 321.247,
+      "fyt_MPa": 321.247,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0084",
+      "spans_m": [
+        8.421,
+        8.421,
+        8.421
+      ],
+      "dead_kN_m": [
+        26.837,
+        26.837,
+        26.837
+      ],
+      "live_kN_m": [
+        118.755,
+        118.755,
+        118.755
+      ],
+      "fc_MPa": 37.78,
+      "fy_MPa": 413.699,
+      "fyt_MPa": 413.699,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0085",
+      "spans_m": [
+        9.883,
+        9.883,
+        9.883
+      ],
+      "dead_kN_m": [
+        118.992,
+        118.992,
+        118.992
+      ],
+      "live_kN_m": [
+        26.322,
+        26.322,
+        26.322
+      ],
+      "fc_MPa": 32.762,
+      "fy_MPa": 308.44,
+      "fyt_MPa": 308.44,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0086",
+      "spans_m": [
+        8.763,
+        8.763,
+        8.763
+      ],
+      "dead_kN_m": [
+        109.714,
+        109.714,
+        109.714
+      ],
+      "live_kN_m": [
+        135.037,
+        135.037,
+        135.037
+      ],
+      "fc_MPa": 29.784,
+      "fy_MPa": 203.091,
+      "fyt_MPa": 203.091,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0087",
+      "spans_m": [
+        6.595,
+        6.595,
+        6.595
+      ],
+      "dead_kN_m": [
+        119.843,
+        119.843,
+        119.843
+      ],
+      "live_kN_m": [
+        67.812,
+        67.812,
+        67.812
+      ],
+      "fc_MPa": 28.943,
+      "fy_MPa": 455.972,
+      "fyt_MPa": 455.972,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0088",
+      "spans_m": [
+        8.507,
+        8.507,
+        8.507
+      ],
+      "dead_kN_m": [
+        137.308,
+        137.308,
+        137.308
+      ],
+      "live_kN_m": [
+        17.608,
+        17.608,
+        17.608
+      ],
+      "fc_MPa": 33.248,
+      "fy_MPa": 403.873,
+      "fyt_MPa": 403.873,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0089",
+      "spans_m": [
+        3.441,
+        3.441,
+        3.441
+      ],
+      "dead_kN_m": [
+        132.523,
+        132.523,
+        132.523
+      ],
+      "live_kN_m": [
+        43.456,
+        43.456,
+        43.456
+      ],
+      "fc_MPa": 32.911,
+      "fy_MPa": 480.034,
+      "fyt_MPa": 480.034,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0090",
+      "spans_m": [
+        10.564,
+        10.564,
+        10.564
+      ],
+      "dead_kN_m": [
+        32.006,
+        32.006,
+        32.006
+      ],
+      "live_kN_m": [
+        122.358,
+        122.358,
+        122.358
+      ],
+      "fc_MPa": 25.954,
+      "fy_MPa": 271.145,
+      "fyt_MPa": 271.145,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0091",
+      "spans_m": [
+        6.467,
+        6.467,
+        6.467
+      ],
+      "dead_kN_m": [
+        78.198,
+        78.198,
+        78.198
+      ],
+      "live_kN_m": [
+        109.379,
+        109.379,
+        109.379
+      ],
+      "fc_MPa": 34.899,
+      "fy_MPa": 371.627,
+      "fyt_MPa": 371.627,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0092",
+      "spans_m": [
+        9.906,
+        9.906,
+        9.906
+      ],
+      "dead_kN_m": [
+        98.473,
+        98.473,
+        98.473
+      ],
+      "live_kN_m": [
+        109.385,
+        109.385,
+        109.385
+      ],
+      "fc_MPa": 28.266,
+      "fy_MPa": 345.886,
+      "fyt_MPa": 345.886,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0093",
+      "spans_m": [
+        3.853,
+        3.853,
+        3.853
+      ],
+      "dead_kN_m": [
+        133.288,
+        133.288,
+        133.288
+      ],
+      "live_kN_m": [
+        15.081,
+        15.081,
+        15.081
+      ],
+      "fc_MPa": 31.467,
+      "fy_MPa": 482.81,
+      "fyt_MPa": 482.81,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0094",
+      "spans_m": [
+        7.051,
+        7.051,
+        7.051
+      ],
+      "dead_kN_m": [
+        27.987,
+        27.987,
+        27.987
+      ],
+      "live_kN_m": [
+        20.553,
+        20.553,
+        20.553
+      ],
+      "fc_MPa": 26.532,
+      "fy_MPa": 216.268,
+      "fyt_MPa": 216.268,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0095",
+      "spans_m": [
+        10.758,
+        10.758,
+        10.758
+      ],
+      "dead_kN_m": [
+        49.946,
+        49.946,
+        49.946
+      ],
+      "live_kN_m": [
+        72.533,
+        72.533,
+        72.533
+      ],
+      "fc_MPa": 23.748,
+      "fy_MPa": 266.176,
+      "fyt_MPa": 266.176,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0096",
+      "spans_m": [
+        5.749,
+        5.749,
+        5.749
+      ],
+      "dead_kN_m": [
+        131.905,
+        131.905,
+        131.905
+      ],
+      "live_kN_m": [
+        77.172,
+        77.172,
+        77.172
+      ],
+      "fc_MPa": 39.853,
+      "fy_MPa": 393.407,
+      "fyt_MPa": 393.407,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0097",
+      "spans_m": [
+        3.42,
+        3.42,
+        3.42
+      ],
+      "dead_kN_m": [
+        52.93,
+        52.93,
+        52.93
+      ],
+      "live_kN_m": [
+        91.536,
+        91.536,
+        91.536
+      ],
+      "fc_MPa": 30.222,
+      "fy_MPa": 256.674,
+      "fyt_MPa": 256.674,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0098",
+      "spans_m": [
+        6.978,
+        6.978,
+        6.978
+      ],
+      "dead_kN_m": [
+        113.98,
+        113.98,
+        113.98
+      ],
+      "live_kN_m": [
+        61.99,
+        61.99,
+        61.99
+      ],
+      "fc_MPa": 23.339,
+      "fy_MPa": 239.844,
+      "fyt_MPa": 239.844,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0099",
+      "spans_m": [
+        11.728,
+        11.728,
+        11.728
+      ],
+      "dead_kN_m": [
+        41.733,
+        41.733,
+        41.733
+      ],
+      "live_kN_m": [
+        20.766,
+        20.766,
+        20.766
+      ],
+      "fc_MPa": 34.037,
+      "fy_MPa": 382.034,
+      "fyt_MPa": 382.034,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    },
+    {
+      "name": "Research 42-0100",
+      "spans_m": [
+        3.207,
+        3.207,
+        3.207
+      ],
+      "dead_kN_m": [
+        28.076,
+        28.076,
+        28.076
+      ],
+      "live_kN_m": [
+        142.634,
+        142.634,
+        142.634
+      ],
+      "fc_MPa": 33.764,
+      "fy_MPa": 378.903,
+      "fyt_MPa": 378.903,
+      "centroid_cover_mm": 60,
+      "concrete_weight_kN_m3": 24,
+      "flexural_modifier": 0.35
+    }
+  ],
+  "sections_mm": [
+    [
+      300,
+      350
+    ],
+    [
+      900,
+      1200
+    ],
+    [
+      750,
+      975
+    ],
+    [
+      375,
+      600
+    ],
+    [
+      300,
+      1000
+    ],
+    [
+      825,
+      975
+    ],
+    [
+      500,
+      400
+    ],
+    [
+      475,
+      500
+    ],
+    [
+      450,
+      825
+    ],
+    [
+      400,
+      425
+    ],
+    [
+      825,
+      850
+    ],
+    [
+      375,
+      350
+    ],
+    [
+      775,
+      1050
+    ],
+    [
+      825,
+      950
+    ],
+    [
+      675,
+      1200
+    ],
+    [
+      350,
+      850
+    ],
+    [
+      725,
+      600
+    ],
+    [
+      600,
+      675
+    ],
+    [
+      300,
+      1175
+    ],
+    [
+      300,
+      1125
+    ]
+  ],
+  "stations_per_span": 21,
+  "max_models": 2000,
+  "etabs_executable": "C:\\Program Files\\Computers and Structures\\ETABS 22\\ETABS.exe",
+  "check_combinations": true,
+  "loading_protocol": "research_full_udl",
+  "dead_load_basis": "total_including_self_weight",
+  "enforce_research_ranges": true,
+  "sampling_settings": {
+    "count": 100,
+    "seed": 42,
+    "spans_min": 3,
+    "spans_max": 3,
+    "span_min_mm": 3000,
+    "span_max_mm": 12000,
+    "dead_min": 10,
+    "dead_max": 150,
+    "live_min": 10,
+    "live_max": 150,
+    "fc_min": 20,
+    "fc_max": 40,
+    "fy_min": 200,
+    "fy_max": 517,
+    "width_min_mm": 300,
+    "width_max_mm": 900,
+    "depth_min_mm": 350,
+    "depth_max_mm": 1200,
+    "section_step_mm": 25,
+    "candidate_count": 20,
+    "stirrup_matches_fy": true,
+    "equal_spans": true,
+    "whole_unit_parameters": false
+  },
+  "serviceability": {
+    "enabled": true,
+    "limit_mode": "user_defined",
+    "total_basis": "immediate",
+    "category": null,
+    "sustained_live_fraction": null,
+    "duration_months": null,
+    "attachment_timing": null,
+    "attachment_tolerance_mm": null,
+    "dead_limit_divisor": 120,
+    "total_limit_divisor": 240
+  }
+}

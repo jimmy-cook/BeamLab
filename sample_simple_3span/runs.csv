@@ -1,0 +1,2 @@
+﻿scenario_id,candidate_id,b_mm,h_mm,status,stage,error,model_path,analysis_cases_finished
+ee935031a6ad8226,fd5cbce0bfc8e60d,300,600,complete,complete,,models/fd5cbce0bfc8e60d.edb,2
