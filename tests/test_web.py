@@ -392,3 +392,24 @@ def test_run_records_local_date_start_end_and_duration(tmp_path):
     summary = run_summary(tmp_path)
     assert (summary["date"], summary["start_time"], summary["end_time"], summary["duration"]) == \
         (info[0]["date"], info[0]["start_time"], info[0]["end_time"], info[0]["duration"])
+
+
+def test_screen_ranges_change_the_sampled_beams_and_defaults_stay_the_same(tmp_path):
+    from beam_lab.research import DEFAULT_RANGES
+    default = build_study("phase1", lines=40, seed=56, root=ROOT)
+    assert build_study("phase1", lines=40, seed=56, root=ROOT, ranges=dict(DEFAULT_RANGES)).to_dict()["scenarios"] == \
+        default.to_dict()["scenarios"]  # the screen's defaults give exactly today's beams
+    narrow = dict(dead_min=20, dead_max=40, live_min=15, live_max=30, fc_min=25, fc_max=35, fy_min=400, fy_max=500,
+                  span_min_mm=5000, span_max_mm=8000)
+    config = build_study("phase2", lines=40, seed=56, root=ROOT, ranges=narrow)
+    for s in config.scenarios:
+        assert 20 <= s.dead_kN_m[0] <= 40 and 15 <= s.live_kN_m[0] <= 30 and 0.25 <= s.live_kN_m[0]/s.dead_kN_m[0] <= 1.5
+        assert 25 <= s.fc_MPa <= 35 and 400 <= s.fy_MPa <= 500 and all(5 <= x <= 8 for x in s.spans_m)
+    assert dict(settings_summary(config))["Spans"].startswith("5–8 m")
+    for bad in (dict(dead_min=5), dict(dead_min=80, dead_max=40), dict(fy_max=900), dict(unknown=1), dict(dead_min="x")):
+        with pytest.raises(ValueError):
+            build_study("phase1", lines=5, seed=1, root=ROOT, ranges=bad)
+    lab = web.Lab(out_dir=tmp_path, settings_file=tmp_path/"s.json", root=ROOT)
+    assert lab.presets()[0]["ranges"] == DEFAULT_RANGES
+    preview = lab.preview(dict(preset="phase1", lines=5, seed=1, ranges=dict(dead_min=50, dead_max=60)))
+    assert all(50 <= b["D"][0] <= 60 for b in preview["beams"])

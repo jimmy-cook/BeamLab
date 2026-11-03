@@ -4,7 +4,7 @@
 
 Double-click **ETABS Beam Lab Web.exe**. Your browser opens the research screen (only on this PC):
 
-1. **Left sidebar:** choose the run (Smoke test, Verification A or B, Phase 1, Phase 2), check the number of beam lines, seed and run name. "Study settings" lists the loads, materials, sizes and checks; "ETABS and output folder" shows whether ETABS 22 was found.
+1. **Left sidebar:** choose the run (Smoke test, Verification A or B, Phase 1, Phase 2), check the number of beam lines, seed and run name. "Load and material ranges" sets the min and max of D, L, L/D, f′c, fy, fyt and span length (defaults: the research ranges; changed boxes are highlighted, "Reset to defaults" restores them). "Study settings" lists the loads, materials, sizes and checks; "ETABS and output folder" shows whether ETABS 22 was found.
 2. Click **Start data generation**. The main area shows the beam line ETABS is working on, live: elevation with span dimensions, supports and loads; the tested section to true scale with b and h; the depth search; the moment diagram and PASS/FAIL of the last model; and the winning widths so far.
 3. **Stop after current model** keeps everything finished so far. **Previous runs** opens any run folder. **Close program** (top right) ends it; if you only close the browser tab, it closes itself after 10 minutes unless ETABS is still running.
 

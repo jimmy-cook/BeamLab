@@ -46,11 +46,51 @@ def application_dir():
     return Path(sys.executable).resolve().parent if getattr(sys, "frozen", False) else Path(__file__).resolve().parent.parent
 
 
+# Sampling ranges the screens may change; any left out keep the ResearchRanges default (the agreed research ranges).
+RANGE_FIELDS = ("dead_min", "dead_max", "live_min", "live_max", "min_live_dead_ratio", "max_live_dead_ratio",
+                "fc_min", "fc_max", "fy_min", "fy_max", "fyt_min", "fyt_max", "span_min_mm", "span_max_mm")
+DEFAULT_RANGES = {key: getattr(ResearchRanges(), key) for key in RANGE_FIELDS}
+# Plain names and the limits ResearchRanges.validate enforces, for messages a screen user can act on.
+RANGE_LIMITS = {"dead": ("Dead load D", 10, 150, "kN/m"), "live": ("Live load L", 10, 150, "kN/m"),
+                "fc": ("f′c", 20, 50, "MPa"), "fy": ("fy", 200, 600, "MPa"), "fyt": ("fyt", 200, 420, "MPa"),
+                "span": ("Span length", 3, 12, "m"), "live_dead_ratio": ("L / D ratio", 0, 20, "")}
+
+
+def range_problem(values):
+    """The first out-of-limit or min > max range, in plain words; None when all are fine."""
+    for prefix, (name, low, high, unit) in RANGE_LIMITS.items():
+        lo_key, hi_key = (f"min_{prefix}", f"max_{prefix}") if prefix == "live_dead_ratio" else \
+                         (f"{prefix}_min_mm", f"{prefix}_max_mm") if prefix == "span" else (f"{prefix}_min", f"{prefix}_max")
+        scale = 1000 if prefix == "span" else 1
+        lo, hi = values[lo_key]/scale, values[hi_key]/scale
+        if not (low <= lo <= high and low <= hi <= high):
+            return f"{name} must stay between {low:g} and {high:g} {unit}".rstrip()
+        if lo > hi:
+            return f"{name}: minimum {lo:g} is larger than maximum {hi:g}"
+    return None
+
+
+def range_overrides(ranges):
+    """Checked range values from a screen. Spans are whole millimetres; the sampler validates limits and min ≤ max."""
+    result = {}
+    for key, value in (ranges or {}).items():
+        if key not in RANGE_FIELDS:
+            raise ValueError(f"Unknown range setting: {key}")
+        if isinstance(value, bool) or not isinstance(value, (int, float)):
+            raise ValueError(f"{key.replace('_', ' ')} must be a number")
+        result[key] = int(round(value)) if key.endswith("_mm") else float(value)
+    problem = range_problem({**DEFAULT_RANGES, **result})
+    if problem:
+        raise ValueError(problem)
+    return result
+
+
 def build_study(key, lines=None, seed=None, whole_numbers=True, etabs_executable=DEFAULT_ETABS, root=None,
-                equal_spans=None, ratio=None):
+                equal_spans=None, ratio=None, ranges=None):
     """The Config a preset runs: sampled with the agreed defaults, or the saved verification study.
 
-    equal_spans and ratio (longer/shorter neighbouring span, 0 = no limit) override the preset's span type."""
+    equal_spans and ratio (longer/shorter neighbouring span, 0 = no limit) override the preset's span type;
+    ranges overrides any of RANGE_FIELDS (loads, L/D, materials, span lengths). Saved studies ignore both."""
     preset = PRESETS[key]
     if "study" in preset:
         data = json.loads((Path(root or application_dir())/preset["study"]).read_text(encoding="utf-8"))
@@ -61,9 +101,9 @@ def build_study(key, lines=None, seed=None, whole_numbers=True, etabs_executable
             raise ValueError("Number of beam lines and seed must be whole numbers")
         equal = preset["equal_spans"] if equal_spans is None else bool(equal_spans)
         limit = 0. if equal else float(preset["ratio"] if ratio is None else ratio)
-        ranges = ResearchRanges(count=lines, seed=seed, size_search=True, equal_spans=equal,
-                                max_adjacent_span_ratio=limit, whole_unit_parameters=whole_numbers)
-        data = sample_study(ranges, TEMPLATE).to_dict()
+        sampling = ResearchRanges(count=lines, seed=seed, size_search=True, equal_spans=equal,
+                                  max_adjacent_span_ratio=limit, whole_unit_parameters=whole_numbers, **range_overrides(ranges))
+        data = sample_study(sampling, TEMPLATE).to_dict()
         data["serviceability"] = DEFAULT_SERVICEABILITY
     data["etabs_executable"] = etabs_executable
     return Config.parse(data)
@@ -80,6 +120,8 @@ def settings_summary(config):
     lines = [("Beam lines", f"{len(config.scenarios)} · 3 spans · " + ("equal spans" if equal else
               f"unequal spans (neighbour ratio ≤ {s.get('max_adjacent_span_ratio') or '–'})") +
               (f" · seed {s['seed']}" if "seed" in s else ""))]
+    if s.get("span_min_mm"):
+        lines += [("Spans", f"{s['span_min_mm']/1000:g}–{s['span_max_mm']/1000:g} m in {s.get('span_step_mm', 250):g} mm steps")]
     if s:
         lines += [("Loads", f"D {s['dead_min']:g}–{s['dead_max']:g} kN/m ({basis}); L {s['live_min']:g}–{s['live_max']:g} kN/m with "
                             f"{s['min_live_dead_ratio']:g} ≤ L/D ≤ {s['max_live_dead_ratio']:g}; same on all spans; {step}"),

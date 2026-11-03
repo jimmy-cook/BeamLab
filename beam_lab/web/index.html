@@ -62,6 +62,8 @@ td,th{padding:4px 6px;border-bottom:1px solid #eef1f4;text-align:left}th{color:v
 .muted{color:var(--muted)}
 svg text{font-family:"Segoe UI",system-ui,sans-serif}
 .nav{display:flex;align-items:center;gap:6px}.nav .small{padding:2px 8px}
+.rgrid{display:grid;grid-template-columns:1fr 68px 68px;gap:4px 6px;align-items:center;font-size:12px;margin-top:8px}
+.rgrid b{font-weight:600;color:var(--muted);font-size:11px}.rgrid input{padding:3px 5px}.rgrid input.changed{border-color:var(--accent);background:var(--accent-soft)}
 .viewbar{display:flex;flex-wrap:wrap;gap:4px 14px;align-items:center;font-size:12px;margin-top:4px}.viewbar .check{margin-top:0;font-size:12px}
 #spanInfo{flex-basis:100%;color:var(--ink)}
 .span-hit{cursor:pointer}.span-hit .seg{transition:fill .15s}.span-hit:hover .seg,.span-hit.on .seg{fill:#a9d8dd}
@@ -88,6 +90,11 @@ svg text{font-family:"Segoe UI",system-ui,sans-serif}
     <label class="check"><input type="checkbox" id="whole" checked> Whole numbers (1 kN/m, 1 MPa)</label>
     <div class="note" id="modelCount"></div>
   </div>
+  <details id="rangesBox"><summary>Load and material ranges <span id="rangesMark" class="muted"></span></summary>
+    <div class="rgrid" id="rangeGrid"><b></b><b>min</b><b>max</b></div>
+    <button class="small" id="rangesReset" style="margin-top:8px">Reset to defaults</button>
+    <div class="note">Each beam line gets random values inside these ranges. The ANN is only reliable inside the ranges it was trained on.</div>
+  </details>
   <div class="group"><div class="field"><label for="runName">Run name</label><input type="text" id="runName" maxlength="40"></div>
     <div class="note" id="folderName"></div></div>
   <details><summary>Study settings</summary><div class="kv" id="summary"></div></details>
@@ -149,8 +156,42 @@ async function api(path, body) {
 const chosen = () => presets.find(p => p.key === $("preset").value);
 const request = () => ({preset: $("preset").value, lines: parseInt($("lines").value, 10), seed: parseInt($("seed").value, 10),
                         whole_numbers: $("whole").checked, run_name: $("runName").value, equal_spans: $("spans").value === "equal",
-                        ratio: $("ratio").value === "" ? 0 : parseFloat($("ratio").value)});
+                        ratio: $("ratio").value === "" ? 0 : parseFloat($("ratio").value), ranges: readRanges()});
 const SAMPLED = ["lines", "seed", "whole", "spans", "ratio"];  // fixed by a saved study
+// [label, min key, max key, step, factor from what is typed to what is sent]: spans are typed in m, sent in mm.
+const RANGE_ROWS = [["Dead load D (kN/m)", "dead_min", "dead_max", 1, 1], ["Live load L (kN/m)", "live_min", "live_max", 1, 1],
+  ["L / D ratio", "min_live_dead_ratio", "max_live_dead_ratio", 0.05, 1], ["f′c (MPa)", "fc_min", "fc_max", 1, 1],
+  ["fy (MPa)", "fy_min", "fy_max", 10, 1], ["fyt stirrups (MPa)", "fyt_min", "fyt_max", 10, 1],
+  ["Span length (m)", "span_min_mm", "span_max_mm", 0.25, 1000]];
+let defaultRanges = {};
+const rangeFactor = key => RANGE_ROWS.find(r => r[1] === key || r[2] === key)[4];
+function buildRanges(defaults) {
+  defaultRanges = defaults;
+  RANGE_ROWS.forEach(([label, lo, hi, step]) => {
+    $("rangeGrid").insertAdjacentHTML("beforeend", `<label for="r_${lo}">${label}</label>` +
+      [lo, hi].map(k => `<input type="number" id="r_${k}" step="${step}">`).join(""));
+    for (const key of [lo, hi]) { SAMPLED.push("r_" + key); $("r_" + key).addEventListener("input", () => { markRanges(); preview(); }); }
+  });
+  setRanges(defaults);
+}
+function setRanges(values) {
+  for (const key in values) $("r_" + key).value = +(values[key]/rangeFactor(key)).toFixed(3);
+  markRanges();
+}
+function readRanges() {  // only the boxes that hold a number; an empty box keeps the default
+  const out = {};
+  for (const key in defaultRanges) { const v = $("r_" + key)?.value; if (v !== undefined && v !== "") out[key] = parseFloat(v)*rangeFactor(key); }
+  return out;
+}
+function markRanges() {
+  const now = readRanges(); let changed = 0;
+  for (const key in defaultRanges) {
+    const differs = key in now && Math.abs(now[key] - defaultRanges[key]) > 1e-9;
+    $("r_" + key).classList.toggle("changed", differs); changed += differs;
+  }
+  $("rangesMark").textContent = changed ? `(${changed} changed)` : "(defaults)";
+}
+$("rangesReset").onclick = () => { setRanges(defaultRanges); preview(); };
 function showSpans() {
   const equal = $("spans").value === "equal", r = $("ratio").value;
   $("ratioBox").style.visibility = equal ? "hidden" : "visible";
@@ -442,6 +483,7 @@ async function poll() {
     return;
   }
   $("preset").innerHTML = presets.map(p => `<option value="${p.key}">${esc(p.title)}</option>`).join("");
+  buildRanges(presets[0].ranges);
   choose(); poll(); loadRuns();
 })();
 </script>

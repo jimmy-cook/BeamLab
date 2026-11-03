@@ -17,7 +17,7 @@ from pathlib import Path
 from urllib.parse import urlparse
 
 from .pipeline import run
-from .research import (DEFAULT_ETABS, PRESETS, application_dir, build_study, installed_etabs, list_runs,
+from .research import (DEFAULT_ETABS, DEFAULT_RANGES, PRESETS, application_dir, build_study, installed_etabs, list_runs,
                        new_run_folder, run_folder_name, run_summary, settings_summary)
 
 
@@ -44,10 +44,11 @@ class Lab:
         if key not in PRESETS:
             raise ValueError("Choose what to run")
         return build_study(key, body.get("lines"), body.get("seed"), bool(body.get("whole_numbers", True)),
-                           self.etabs, self.root, body.get("equal_spans"), body.get("ratio"))
+                           self.etabs, self.root, body.get("equal_spans"), body.get("ratio"), body.get("ranges"))
 
     def presets(self):
-        return [dict(key=k, saved="study" in p, **{f: p.get(f) for f in ("title", "note", "lines", "seed", "name", "equal_spans", "ratio")})
+        return [dict(key=k, saved="study" in p, ranges=DEFAULT_RANGES,
+                     **{f: p.get(f) for f in ("title", "note", "lines", "seed", "name", "equal_spans", "ratio")})
                 for k, p in PRESETS.items()]
 
     def preview(self, body):
